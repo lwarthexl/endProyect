@@ -1,0 +1,171 @@
+*{
+
+	/*Configuraciones universales para la pagina*/
+    font-family: 'Roboto', sans-serif;
+	padding:0;
+	margin:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.contenido{
+	width:95%;
+	max-width:1000px;
+	margin: auto;
+}
+	.contenido p{
+		margin-bottom:40px;
+		float:center;
+	}
+
+header nav{
+	/*Color del la barra de navegacion*/
+	background:#000000;
+	padding:0;
+	margin:0;
+	margin-bottom: 10px;
+	/*sombra de la barra de navegacion	*/
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+	-webkit-transition:all ease .5s;
+	-o-transition:all ease .5s;
+	transition:all ease .5s;
+
+}	
+	header nav ul{
+		list-style:none;
+		overflow:hidden;
+
+	}
+		header nav ul li{
+			float:left;
+		}
+			header nav ul li a{
+				display:block;
+				padding:10px;
+				/*Color de la fuente dentro de la barra de menu*/
+				color:#e1ded6;
+				text-decoration:none; 
+			}
+			header nav ul li a:hover{
+				/*Color de sombra cuando el mouse se desplaza*/
+				background:#1c894a;
+			}
+				header nav ul li span{
+					margin-right:10px; 
+				}
+
+.menu-estatico{
+	/* configuracion menu estatico luego que se desplaza */
+	width: 95%;
+	position: fixed;
+	z-index:1000;
+	top:0;
+	width:100%;
+	max-width:1000px;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+	.menu-estatico ul li a {
+		padding: 9px 10px;
+	}
+img{
+	display:block;
+	margin:auto;
+}
+
+
+.BotonMenu{
+	/*Desaparace el boton me menu*/
+	display:none;
+}
+section{
+	padding:20px;
+}
+/*Responsize del menu cuando llegue a 860px*/
+@media screen and (max-width:1010px){
+	header nav{
+		width:60%;
+		height:100%;
+		margin:0;
+		position:fixed;
+	}
+	/*Cambio de menu inferior a 860px*/
+	header nav ul li{
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255,.3);
+	}
+	/*Se muestra el boton de menu*/
+	.BotonMenu{
+		display:block;
+		width:100%;
+		background:#fff; 
+	}  
+	/*Configuracion del boton de menu*/
+		.BotonMenu .BotonM{
+			display:block;
+			padding:10px;
+			background:#000;
+			color:#e1ded6;
+			text-decoration:none;
+			font-size:20px;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing: border-box;
+			font-weight:bold;
+		}
+			.BotonMenu span{
+				float:right;
+				font-size:20px;
+			}
+body,html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+		
+}
+form{
+width:95%;
+	max-width:1000px;
+	margin: auto;	
+}
+label{
+	/*indivisualizar lebels*/
+	display: block;
+	width: 100%;
+}
+textarea{
+	/*quitar tamaño*/
+	resize: vertical;
+	/*limitar pixeles*/
+	max-height: 300px;
+	min-height: 100px;
+
+}
+input , textarea , select{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	/*Quitar respeta bordes de input*/
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+input:focus,textarea:focus{
+	/*Borde de  los input cuando se usan*/
+	border: 1px solid #1668C4;
+}
+input[type="submit"]{
+margin-bottom: 0;
+/*color boton*/
+background: #000000;
+color: #fff;
+border: none;
+}
+/*cambiar color de boton cuando este el mouse*/
+input[type="submit"]:hover{
+background: #1c894a;
+cursor: pointer;
+}

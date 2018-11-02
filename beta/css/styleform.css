@@ -1,0 +1,48 @@
+h1{
+	/*Formato Basico alienacion*/
+	width:95%;
+	max-width:1000px;
+	margin: auto;
+	font-size: 40px;
+}
+.ubicacion{
+	/*Formato Basico alienacion*/
+	width:95%;
+	max-width:1000px;
+	margin: auto;
+	font-size: 20px;
+	color: #aaadab;
+}
+.img{
+	/*Imagen Responsize*/
+	width:95%;
+	max-width:1000px;
+	margin: auto;
+	height:95%;
+	max-height:1000px;
+}
+.parrafo{
+	width:95%;
+	max-width:1000px;
+	margin: auto;
+	font-size: 20px;
+	color: #000000;
+}
+.oculta{
+
+	cursor: pointer;
+	color: #000000;
+}
+
+a:link {
+	color=#000000;
+	text-decoration:none;
+}
+
+a:visited {color=#000000;
+text-decoration:none;}
+a:active {color=#000000;
+text-decoration:none;}
+a:hover {color=#000000;
+text-decoration:none;}
+
